@@ -1,0 +1,27 @@
+{
+  "name": "redux-middleware-logger",
+  "version": "0.1.0",
+  "description": "Logger for Redux's middleware.",
+  "author": "Yuki Kodama",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "redux",
+    "middleware",
+    "logger",
+    "redux-middleware",
+    "flux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuy/redux-middleware-logger"
+  },
+  "scripts": {
+    "prepublish": "rimraf lib && babel src --out-dir lib"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "rimraf": "^2.4.3"
+  }
+}
