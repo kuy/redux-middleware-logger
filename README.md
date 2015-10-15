@@ -1,16 +1,18 @@
+[![npm package](https://img.shields.io/npm/v/redux-middleware-logger.svg?style=flat-square)](https://www.npmjs.org/package/redux-middleware-logger)
+
 # redux-middleware-logger
 
 Logger for Redux's middleware.
 This can be used to debug your middleware.
 
-## Install
+### Install
 `npm install redux-middleware-logger --save`
 
-## Usage
+### Usage
 
 The default export is a function that inserts middleware functions for logging.
 
-```javascript
+```js
 import injectMiddlewareLogger from 'redux-middleware-logger';
 
 const middlewares = injectMiddlewareLogger(m1, m2);
@@ -18,16 +20,16 @@ const createStoreWithMiddleware = applyMiddleware(...middlewares);
 const store = createStoreWithMiddleware(reducer);
 ```
 
-Or
+or
 
-```javascript
+```js
 import withLogger from 'redux-middleware-logger';
 
 const store = applyMiddleware(...withLogger(m1, m2))(createStore)(reducer);
 ```
 
-NOTE: `injectMiddlewareLogger` and `withLogger` are same function.
+*Note: `injectMiddlewareLogger` and `withLogger` are same function.*
 
-## License
+### License
 
 MIT

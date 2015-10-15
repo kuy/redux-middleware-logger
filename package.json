@@ -17,11 +17,18 @@
     "url": "https://github.com/kuy/redux-middleware-logger"
   },
   "scripts": {
-    "prepublish": "rimraf lib && babel src --out-dir lib"
+    "lint": "eslint src/index.js",
+    "clean": "rimraf lib",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run lint && npm run build"
   },
   "devDependencies": {
     "babel": "^5.8.23",
     "babel-core": "^5.8.25",
+    "babel-eslint": "^4.1.1",
+    "eslint": "^1.6.0",
+    "eslint-config-airbnb": "^0.1.0",
+    "eslint-plugin-react": "^3.5.1",
     "rimraf": "^2.4.3"
   }
 }
