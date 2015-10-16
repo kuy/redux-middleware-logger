@@ -1,6 +1,6 @@
 {
   "name": "redux-middleware-logger",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Logger for Redux's middleware.",
   "author": "Yuki Kodama",
   "license": "MIT",
